@@ -2,7 +2,7 @@
 
 This is demo code for Paper "Scene-aware Online Calibration of LiDAR and Cameras for Driving Systems"
 
-![Local Image](https://github.com/JMU-Robot/LiDAR-Camera-Online-Calibration/tree/main/pic/compare.png "Our online calibration result compare to state-of-the-art online method")
+![avatar](pic/compare.png "Our online calibration result compare to state-of-the-art online method")
 
 ## 1. Install dependencies
 
