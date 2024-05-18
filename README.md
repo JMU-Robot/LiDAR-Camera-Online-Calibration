@@ -2,6 +2,8 @@
 
 This is demo code for Paper "Scene-aware Online Calibration of LiDAR and Cameras for Driving Systems"
 
+![Local Image](https://github.com/JMU-Robot/LiDAR-Camera-Online-Calibration/tree/main/pic "Our online calibration result compare to state-of-the-art online method")
+
 ## 1. Install dependencies
 
 Before running livox_ros_driver, ROS and Livox-SDK must be installed.
