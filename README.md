@@ -64,8 +64,20 @@ roslaunch online_calibration calib.launch
 rosbag play YOUR_DOWNLOADED.bag
 ```
 
-## Contributing
-
+## 5.BibTex Citation
+Thank you for citing our paper on [IEEE](https://ieeexplore.ieee.org/abstract/document/10356133) if you use any of this code: 
+```
+@ARTICLE{10356133,
+  author={Gong, Zheng and He, Rui and Gao, Kyle and Cai, Guorong},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Scene-aware Online Calibration of LiDAR and Cameras for Driving Systems}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Feature extraction;Laser radar;Calibration;Cameras;Point cloud compression;Optimization;Roads},
+  doi={10.1109/TIM.2023.3342241}}
+```
 
 
 ## License
