@@ -35,7 +35,7 @@ For ROS installation, please refer to the ROS installation guide :
 
 1. Get LiDAR-Camera-Online-Calibration from GitHub :
 
-　　`git clone https://github.com/JMU-Robot/LiDAR-Camera-Online-Calibration.git online_cali_ws/src`
+　　`git clone https://github.com/JMU-Robot/LiDAR-Camera-Online-Calibration.git`
 
 &ensp;&ensp;&ensp;&ensp;***Note :***
 
@@ -44,7 +44,7 @@ For ROS installation, please refer to the ROS installation guide :
 2. Use the following command to build LiDAR-Camera-Online-Calibration :
 
    ```bash
-   cd online_cali_ws
+   cd LiDAR-Camera-Online-Calibration/
    catkin_make
    ```
 
