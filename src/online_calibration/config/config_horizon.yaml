@@ -1,0 +1,35 @@
+%YAML:1.0
+
+# ground truth extrinsic, only for compare, not use
+ExtrinsicMat: !!opencv-matrix
+  rows: 4
+  cols: 4
+  dt: d
+  data: [0.00725796, -0.999762, -0.020579, 0.00510278,
+         0.00587756, 0.0206219, -0.99977, 0.0157129,
+         0.999956, 0.00713534, 0.00602583, 0.0301215,
+         0,0,0,1]
+
+#init value for online calibration
+rotVector: !!opencv-matrix # [AngleAxis-z, AngleAxis-y, AngleAxis-x, x, y, z]
+  rows: 1
+  cols: 6
+  dt: d
+  data: [1.2092,   -1.2092,   1.2092,   0.00,   0.01,   0.02]
+  
+
+biasVector: !!opencv-matrix
+  rows: 1
+  cols: 6
+  dt: d
+  data: [0.00,   0.00,   0.00,   0.00,   0.00,   0.00]
+
+adjustVector: !!opencv-matrix
+  rows: 1
+  cols: 3
+  dt: d
+  data: [0.01,   0.001,  20.0] #[ adj_rot, adj_trans, window_size] ; indoor 0.002 stable  //0.005,   0.001,  10.0 21.49->0.005
+   
+   
+
+

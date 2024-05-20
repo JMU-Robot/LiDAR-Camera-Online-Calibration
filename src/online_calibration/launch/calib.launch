@@ -1,0 +1,27 @@
+<launch>
+
+    <node 
+    pkg="online_calibration" 
+    type="online_calibration" 
+    name="online_calibration" 
+    output="screen"
+    args="$(find online_calibration)/config/camera_horizon.yaml 
+          $(find online_calibration)/config/config_horizon.yaml
+        "        
+    />
+
+    <node 
+    pkg="online_calibration" 
+    type="online_display" 
+    name="online_display" 
+    output="screen"
+    args="$(find online_calibration)/config/camera_horizon.yaml 
+          $(find online_calibration)/config/config_horizon.yaml
+        "        
+    />
+
+    
+
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find online_calibration)/rviz_cfg/calib.rviz" />
+
+</launch>
