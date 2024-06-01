@@ -58,7 +58,7 @@ For ROS installation, please refer to the ROS installation guide :
 ## 3.Data preparation
 
 ## 4.Rosbag Example
-Download [horizon_example](https:///data.bag) and then
+Download [horizon_example](https://drive.google.com/file/d/1NjiJna4k1qjvR2rLV4neCAqZ_59yJN7_/view?usp=sharing) and then
 ```
 roslaunch online_calibration calib.launch
 rosbag play YOUR_DOWNLOADED.bag
