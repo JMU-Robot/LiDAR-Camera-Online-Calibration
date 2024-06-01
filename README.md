@@ -71,7 +71,11 @@ rosbag play YOUR_DOWNLOADED.bag
 Prepare to collect your own rosbag data. For LiDAR, the code can currently only process data in the **LIVOX Horizon** model or **Avia**'s **customMsg** format. Make sure to use Livox's rosdriver for data collection in customMsg format (**note that the code feature extraction uses line information, so pointcloud2 format cannot be used**). For the camera, it is recommended to use Hikvision's industrial camera set to PTP master mode for data synchronization (the specific model of hardware used in this project can refer to the paper). If you use your own camera, pay attention to the synchronization of the data. The ROS data format is the standard camera data format.
 
 
-**Step.2**
+**Step.2 Calibrate the camera intrinsics**
+
+Calibrate the camera intrinsics and write the intrinsic data into src/online_calibration/config/camera_horizon.yaml. At the same time, write the initial extrinsic parameters of the LiDAR-camera into config_horizon.yaml under rotVector. **Note, the method of this paper is for the feature matching of LiDAR and camera, so the initial error should not exceed ±5 degrees, and errors within 3 degrees usually allow the algorithm to converge stably. If your initial extrinsic error is too large, it is recommended to use other calibration methods.**
+
+**Step.3 Test with your own data**
 
 ## 5.BibTex Citation
 Thank you for citing our paper on [IEEE](https://ieeexplore.ieee.org/abstract/document/10356133) if you use any of this code: 
@@ -92,3 +96,5 @@ Thank you for citing our paper on [IEEE](https://ieeexplore.ieee.org/abstract/do
 ## License
 
 MIT © 
+
+
