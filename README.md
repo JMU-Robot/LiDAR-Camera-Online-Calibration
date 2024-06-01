@@ -59,15 +59,20 @@ For ROS installation, please refer to the ROS installation guide :
 ## 3.Rosbag Example
 Download horizon_example
 [ 01.bag](https://drive.google.com/file/d/1NjiJna4k1qjvR2rLV4neCAqZ_59yJN7_/view?usp=sharing) 
-[ 02.bag](https://drive.google.com/file/d/1NjiJna4k1qjvR2rLV4neCAqZ_59yJN7_/view?usp=sharing)
+[ 02.bag](https://drive.google.com/file/d/1Ccd1jBWAER41wTUXsC5c-9VGXuUwte0T/view?usp=sharing)
 and then
 ```
 roslaunch online_calibration calib.launch
 rosbag play YOUR_DOWNLOADED.bag
 ```
 ## 4.Play with your own data 
-Step.1 ;
-Step.2 ;
+**Step.1 Rosbag data capture**
+
+Prepare to collect your own rosbag data. For LiDAR, the code can currently only process data in the **LIVOX Horizon** model or **Avia**'s **customMsg** format. Make sure to use Livox's rosdriver for data collection in customMsg format (**note that the code feature extraction uses line information, so pointcloud2 format cannot be used**). For the camera, it is recommended to use Hikvision's industrial camera set to PTP master mode for data synchronization (the specific model of hardware used in this project can refer to the paper). If you use your own camera, pay attention to the synchronization of the data. The ROS data format is the standard camera data format.
+
+
+**Step.2**
+
 ## 5.BibTex Citation
 Thank you for citing our paper on [IEEE](https://ieeexplore.ieee.org/abstract/document/10356133) if you use any of this code: 
 ```
