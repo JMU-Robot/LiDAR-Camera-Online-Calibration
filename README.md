@@ -55,9 +55,8 @@ For ROS installation, please refer to the ROS installation guide :
 
 ```
 ```
-## 3.Data preparation
 
-## 4.Rosbag Example
+## 3.Rosbag Example
 Download horizon_example
 [ 01.bag](https://drive.google.com/file/d/1NjiJna4k1qjvR2rLV4neCAqZ_59yJN7_/view?usp=sharing) 
 [ 02.bag](https://drive.google.com/file/d/1NjiJna4k1qjvR2rLV4neCAqZ_59yJN7_/view?usp=sharing)
@@ -66,7 +65,9 @@ and then
 roslaunch online_calibration calib.launch
 rosbag play YOUR_DOWNLOADED.bag
 ```
-
+## 4.Play with your own data 
+Step.1 ;
+Step.2 ;
 ## 5.BibTex Citation
 Thank you for citing our paper on [IEEE](https://ieeexplore.ieee.org/abstract/document/10356133) if you use any of this code: 
 ```
