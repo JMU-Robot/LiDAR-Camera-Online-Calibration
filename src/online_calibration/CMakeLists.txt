@@ -28,7 +28,6 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
-find_package(Ceres REQUIRED)
 find_package(OpenCV REQUIRED)
 
 
@@ -37,7 +36,6 @@ include_directories(include
         	    ${catkin_INCLUDE_DIRS}
 		    ${EIGEN3_INCLUDE_DIR}
 		    ${PCL_INCLUDE_DIRS}
-        	    ${CERES_INCLUDE_DIRS}
 		    ${OpenCV_INCLUDE_DIRS}
         	    ${SUITESPARSE_INCLUDE_DIRS})
 
@@ -49,7 +47,7 @@ generate_messages(DEPENDENCIES std_msgs)
 
 catkin_package(CATKIN_DEPENDS geometry_msgs nav_msgs roscpp rospy std_msgs message_runtime 
   	       pcl_conversions pcl_ros message_filters std_srvs tf_conversions tf 
-	       eigen_conversions DEPENDS PCL OpenCV INCLUDE_DIRS include)
+	       eigen_conversions DEPENDS PCL OpenCV INCLUDE_DIRS)
 
 add_executable (online_calibration 
 		src/onlineCalib.cpp
